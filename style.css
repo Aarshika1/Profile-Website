@@ -34,7 +34,6 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-    margin-bottom: 25px;
 }
 .about, .projects, .skills, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -285,7 +284,7 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-height: 300px;
+    min-height: 350px;
 }
 .projects .projects-content .card:hover{
     background: gray;
@@ -308,6 +307,29 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.projects .max-width{
+    margin-bottom: 25px;
+}
+
+.projects .stretched-link{
+    color: silver;
+}
+
+.projects .stretched-link::after {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+.projects p{
+    margin-bottom: 10px;
 }
 
 
@@ -564,22 +586,3 @@ footer span a:hover{
     }
 }
 
-.stretched-link{
-    color: white;
-}
-
-.stretched-link::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: auto;
-    content: "";
-    background-color: rgba(0,0,0,0);
-    color: white;
-}
-p{
-    margin-bottom: 10px;
-}
